@@ -1,5 +1,6 @@
--- go_jesseyu
--- Test
+-- mmUI
+-- Version: v1.0
+-- Made by: go_jesseyu
 
 -- Instances:
 
@@ -13,13 +14,21 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local Info = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
 local _0 = Instance.new("TextLabel")
-local _1 = Instance.new("TextLabel")
+local _2 = Instance.new("TextLabel")
+local _3 = Instance.new("TextLabel")
+local _1 = Instance.new("Frame")
 local Buttons = Instance.new("Frame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local _0_2 = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local _1_2 = Instance.new("TextButton")
+local _2_2 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local _3_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local _1_2 = Instance.new("Frame")
+local Version = Instance.new("TextLabel")
+local Info_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
@@ -100,17 +109,39 @@ _0.TextColor3 = Color3.fromRGB(255, 255, 255)
 _0.TextSize = 14.000
 _0.TextXAlignment = Enum.TextXAlignment.Left
 
+_2.Name = "2"
+_2.Parent = Info
+_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2.BackgroundTransparency = 1.000
+_2.LayoutOrder = 2
+_2.Size = UDim2.new(1, 0, 0.200000003, 0)
+_2.Font = Enum.Font.Gotham
+_2.Text = "WalkSpeed"
+_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2.TextSize = 14.000
+_2.TextXAlignment = Enum.TextXAlignment.Left
+
+_3.Name = "3"
+_3.Parent = Info
+_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3.BackgroundTransparency = 1.000
+_3.LayoutOrder = 3
+_3.Size = UDim2.new(1, 0, 0.200000003, 0)
+_3.Font = Enum.Font.Gotham
+_3.Text = "JumpPower"
+_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3.TextSize = 14.000
+_3.TextXAlignment = Enum.TextXAlignment.Left
+
 _1.Name = "1"
 _1.Parent = Info
 _1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 _1.BackgroundTransparency = 1.000
+_1.BorderSizePixel = 0
 _1.LayoutOrder = 1
-_1.Size = UDim2.new(1, 0, 0.200000003, 0)
-_1.Font = Enum.Font.Gotham
-_1.Text = "WalkSpeed (H)"
-_1.TextColor3 = Color3.fromRGB(255, 255, 255)
-_1.TextSize = 14.000
-_1.TextXAlignment = Enum.TextXAlignment.Left
+_1.Position = UDim2.new(0, 0, 0.230000004, 0)
+_1.Size = UDim2.new(1, 0, 0.0149999997, 0)
+_1.ZIndex = 2
 
 Buttons.Name = "Buttons"
 Buttons.Parent = ScrollingFrame
@@ -135,52 +166,118 @@ _0_2.TextSize = 14.000
 UICorner_2.CornerRadius = UDim.new(0, 4)
 UICorner_2.Parent = _0_2
 
-_1_2.Name = "1"
-_1_2.Parent = Buttons
-_1_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-_1_2.LayoutOrder = 1
-_1_2.Size = UDim2.new(1, 0, 0.200000003, 0)
-_1_2.Font = Enum.Font.Gotham
-_1_2.Text = "128"
-_1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-_1_2.TextSize = 14.000
+_2_2.Name = "2"
+_2_2.Parent = Buttons
+_2_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+_2_2.LayoutOrder = 2
+_2_2.Size = UDim2.new(1, 0, 0.200000003, 0)
+_2_2.Font = Enum.Font.Gotham
+_2_2.Text = "128"
+_2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2_2.TextSize = 14.000
 
 UICorner_3.CornerRadius = UDim.new(0, 4)
-UICorner_3.Parent = _1_2
+UICorner_3.Parent = _2_2
+
+_3_2.Name = "3"
+_3_2.Parent = Buttons
+_3_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+_3_2.LayoutOrder = 3
+_3_2.Size = UDim2.new(1, 0, 0.200000003, 0)
+_3_2.Font = Enum.Font.Gotham
+_3_2.Text = "100"
+_3_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3_2.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = _3_2
+
+_1_2.Name = "1"
+_1_2.Parent = Buttons
+_1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1_2.BackgroundTransparency = 1.000
+_1_2.BorderSizePixel = 0
+_1_2.LayoutOrder = 1
+_1_2.Position = UDim2.new(0, 0, 0.230000004, 0)
+_1_2.Size = UDim2.new(1, 0, 0.0149999997, 0)
+_1_2.ZIndex = 2
+
+Version.Name = "Version"
+Version.Parent = MainFrame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.0199999996, 0, 0.0199999996, 0)
+Version.Size = UDim2.new(0.100000001, 0, 0.0500000007, 0)
+Version.Font = Enum.Font.Gotham
+Version.Text = "v1.0"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 14.000
+Version.TextXAlignment = Enum.TextXAlignment.Left
+
+Info_2.Name = "Info"
+Info_2.Parent = MainFrame
+Info_2.AnchorPoint = Vector2.new(0, 1)
+Info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.BackgroundTransparency = 0.990
+Info_2.Position = UDim2.new(0.0199999996, 0, 0.980000019, 0)
+Info_2.Size = UDim2.new(0.280000001, 0, 0.0700000003, 0)
+Info_2.Font = Enum.Font.Gotham
+Info_2.Text = "press F3 to hide"
+Info_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.TextSize = 14.000
+Info_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Info_2
 
 -- Scripts:
 
-local function AKMPRW_fake_script() -- _0_2.tpScript 
+local function CVZLF_fake_script() -- _0_2.tpScript 
 	local script = Instance.new('Script', _0_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent);
 	end)
 end
-coroutine.wrap(AKMPRW_fake_script)()
-local function RDGWC_fake_script() -- _1_2.speedScript 
-	local script = Instance.new('Script', _1_2)
+coroutine.wrap(CVZLF_fake_script)()
+local function UQYJPL_fake_script() -- _2_2.speedScript 
+	local script = Instance.new('Script', _2_2)
 
-	local UserInputService = game:GetService("UserInputService");
-	
-	local se = false;
+	local humanoid = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Character.Humanoid;
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if se then
+		if humanoid.WalkSpeed == 16 then
 			script.Parent.Text = "16";
-			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Character.Humanoid.WalkSpeed = 128;
+			humanoid.WalkSpeed = 128;
 		else
 			script.Parent.Text = "128";
-			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Character.Humanoid.WalkSpeed = 16;
+			humanoid.WalkSpeed = 16;
 		end
-		se = not se;
 	end)
 end
-coroutine.wrap(RDGWC_fake_script)()
-local function DFOWGTM_fake_script() -- mmUI.UserInput 
+coroutine.wrap(UQYJPL_fake_script)()
+local function CNNPBAR_fake_script() -- _3_2.powerScript 
+	local script = Instance.new('Script', _3_2)
+
+	local humanoid = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Character.Humanoid;
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if humanoid.JumpPower == 50 then
+			script.Parent.Text = "50";
+			humanoid.JumpPower = 100;
+		else
+			script.Parent.Text = "100";
+			humanoid.JumpPower = 50;
+		end
+	end)
+end
+coroutine.wrap(CNNPBAR_fake_script)()
+local function SGONPZN_fake_script() -- mmUI.UserInput 
 	local script = Instance.new('LocalScript', mmUI)
 
 	local UserInputService = game:GetService("UserInputService");
+	
+	local humanoid = script.Parent.Parent.Parent.Character:WaitForChild("Humanoid");
 	
 	local openKey = Enum.KeyCode.F3;
 	
@@ -190,4 +287,4 @@ local function DFOWGTM_fake_script() -- mmUI.UserInput
 		end
 	end)
 end
-coroutine.wrap(DFOWGTM_fake_script)()
+coroutine.wrap(SGONPZN_fake_script)()
